@@ -1,14 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Appbar from './Appbar'
-import Area from './Chatbox'
 
+import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Appbar/>
-    <Area/>
-    
+    <App />
   </React.StrictMode>,
 )
 

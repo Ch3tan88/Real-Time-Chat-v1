@@ -4,10 +4,9 @@ import "@fontsource/inter";
 import Box from "@mui/joy/Box";
 import Button from '@mui/material/Button';
 import SendIcon from "@mui/icons-material/Send";
-
+//import Appbar from './Appbar.jsx';
 export default function Area() {
-  return (
-    <Box
+  return (<Box
       m={1}
       display={"flex"}
       flexDirection={"column"} // Stack child elements vertically

@@ -7,15 +7,17 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 
+
 function Appbar() {
-  return (
+  return (<div style={{background: 'linear-gradient(100deg, #3B53D6,#4AFAFA)',
+    filter: 'blur(10px)'}}>
     <Box sx={{ flexGrow: 1  }}>
-      <AppBar position="static" sx={{ borderRadius: 13 }} >
-        <Toolbar >
+      <AppBar position="static" color='primary'  sx={{ borderRadius: 13 }} >
+        <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
+
             aria-label="menu"
             sx={{ mr: 2, }}
           >
@@ -25,9 +27,11 @@ function Appbar() {
             Real-Time
           </Typography>
           <Button color="inherit" sx={{fontWeight: 'bold'}}>About</Button>
+           <Button  color="inherit" sx={{fontWeight: 'bold'}}>Signup</Button> 
         </Toolbar>
       </AppBar>
     </Box>
+    </div>
   );
 }
 
